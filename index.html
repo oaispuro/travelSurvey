@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Octavio Aispuro">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travelfun</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Travel Destination Survey</h1>
+          <p id="description" class="description text-center">
+            This survey is to get a consensed idea of your traveling preferences.
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+                   type="text"
+                   name="name"
+                   id="name"
+                   class="form-control"
+                   placeholder="Enter your name"
+                   required
+                   />
+          </div>
+          <div cass="form-group">
+            <label for id="email-label" for="email">Email</label>
+            <input
+                   type="email"
+                   name="email"
+                   id="email"
+                   class="form-control"
+                   placeholder="Enter your email"
+                   required
+                   />
+          </div>
+          <div class="form-groups">
+            <label id="number-label" for="number">Age<span class="clue">(Optional)</span></label>
+            <input
+                   type="number"
+                   name="age"
+                   id="number"
+                   min="1"
+                   max="99"
+                   class="form-control"
+                   placeholder="Age"
+                   />
+          </div>
+          <div class="form-group">
+            <p> Which option best describes your current occupation?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current occupation</option>
+              <option value="student">Student</option>
+              <option value="job">Full-time job</option>
+              <option value="job-mid">Part-time job</option>
+              <option value="unemployed">Unemployed</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>What kind of location would you prefer?</p>
+            <label>
+              <input name="user-recommend" value="Beach" type="radio" class="input-radio" />Beach</label>
+            <label>
+              <input name="user-recommend" value="City" type="radio" class="input-radio"/>City</label>
+            <label>
+              <input name="user-recommend" value="Forest" type="radio" class="input-radio"/>Forest</label>
+          </div>
+          <div class="form-group">
+            <p>What mean of transportation would you like to use?</p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="car">Car</option>
+              <option value="plane">Plane</option>
+              <option value="train">Train</option>
+              <option value="bus">Bus</option>
+            </select>
+          </div>
+              
+               <div class="form-group">
+                 <p>Select all the countries you would consider visiting<span class="clue">(Check all that apply)</span></p>
+                 <label>
+                   <input name="prefer" value="cancun" type="checkbox" class="input-checkbox"/>Cancun</label>
+                 <label>
+                 <input name="prefer" value="Miami" type="checkbox" class="input-checkbox"/>Miami</label>
+          <label>
+            <input name="prefer" value="London" type="checkbox" class="input-checkbox"/>London</label>
+            <label>
+              <input name="prefer" value="China" type="checkbox" class="input-checkbox"/>China</label>
+            <label>
+              <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"/>Germany</label>
+                 <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"/>Italy</label>
+          </div>
+         
+          <div class="form-group">
+            <p>Any other places you'd like to suggest?</p>
+            <textarea 
+                      id="comments"
+                      class="input-textarea"
+                      name="comment"
+                      placeholder="Enter your suggestions here..."></textarea>
+          </div>
+          
+          <div class="form-group">
+            <p>What dates would you like to go?</p>
+            <label for="date1">From</label>
+            <input type="date">
+            <label for="date2">To</label>
+            <input type="date">
+          
+          <div class="form-group">
+            <button
+                    type="submit"
+                    id="submit"
+                    class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      
+      
+    
+</body>
+<footer>
+    <p style="font-size: 1rem;"><em>Created by Octavio Aispuro 2023</em></p>
+</footer>
+</html>
